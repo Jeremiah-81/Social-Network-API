@@ -34,13 +34,13 @@ const UsersSchema = new Schema(
     }
 )
 
-// 
+// This will give us a total count of all our friends.
 UsersSchema.virtual('friendCount').get(function() {
     return this.friends.length;
 })
 
-// 
+// This is where we will create a users model.  It can be done with the users schema
 const Users = model('Users', UsersSchema);
 
-// 
+// This will tell node.js which bits of code to export from a given file so the other files are allowed access to the exported code.
 module.exports = Users;
