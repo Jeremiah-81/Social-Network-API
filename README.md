@@ -10,6 +10,8 @@
 
 ## Tech/Framework
 
+Mongoose is a JavaScript framework that is commonly used in a Node. js application with a MongoDB database.  Express is a popular unopinionated web framework.
+
 
 ## How to Use
 
