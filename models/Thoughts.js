@@ -5,36 +5,8 @@ const { Schema, model, Types } = require('mongoose');
 // This is where we will use the moment object to set the time and date.  This example (MMM DD, YYYY [at] hh:mm a) will show the time date like this.  Jan 1, 1070 10:23: AM
 const moment = require('moment');
 
-// This is where the data we are requesting will be read from.
-const ReactionsSchema = new Schema(
-    {
-// This is where we will create a custom ID for each user.
-    reactionId: {
-        type: Schema.Types.ObjectId,
-        default: ()=> new Types.ObjectId()
-    },
-    reactionBody: {
-        type: String,
-        required: true,
-        maxlength: 280
-    },
-    username: {
-        type: String,
-        required: true
-    },
-    // This is where we will create and use our timestamp we made using the framework wrapper moment.js.
-    createdAt: {
-        type: Date,
-        default: Date.now,
-        get: (createdAtVal) => moment(createdAtVal).format('MMM DD, YYYY [at] hh:mm a')
-    }
-    },
-    {
-    toJSON: {
-        getters: true
-    } 
-    }
-);
+
+   
 
 // This is where the data we are requesting will be read from.
 const ThoughtsSchema = new Schema(
