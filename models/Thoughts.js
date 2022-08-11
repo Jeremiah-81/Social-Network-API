@@ -5,9 +5,6 @@ const { Schema, model, Types } = require('mongoose');
 // This is where we will use the moment object to set the time and date.  This example (MMM DD, YYYY [at] hh:mm a) will show the time date like this.  Jan 1, 1070 10:23: AM
 const moment = require('moment');
 
-
-   
-
 // This is where the data we are requesting will be read from.
 const ThoughtsSchema = new Schema(
     {
