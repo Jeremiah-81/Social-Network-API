@@ -1,5 +1,5 @@
 // This is where the data is located in which we are using.
-const {Thoughts, Users} = require('../models');
+const {Thoughts, Users} = require("../models");
 
 // Here is where we set up the file were going to use.
 const thoughtsController = {

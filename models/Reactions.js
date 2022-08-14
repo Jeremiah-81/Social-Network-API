@@ -34,4 +34,4 @@ const ReactionsSchema = new Schema(
 );
 
 // This will tell node.js which bits of code to export from a given file so the other files are allowed access to the exported code.
-module.exports = Reactions;
+module.exports = ReactionsSchema;

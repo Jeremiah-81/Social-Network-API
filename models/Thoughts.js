@@ -1,7 +1,7 @@
 // Here we will use mongoose to get the data we are requesting.
 
 const { Schema, model, Types } = require("mongoose");
-
+const ReactionsSchema = require("./Reactions")
 // This is where we will use the moment object to set the time and date.  This example (MMM DD, YYYY [at] hh:mm a) will show the time date like this.  Jan 1, 1070 10:23: AM
 const moment = require("moment");
 
